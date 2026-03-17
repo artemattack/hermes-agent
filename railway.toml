@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+startCommand = "bash scripts/gateway-start.sh"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
